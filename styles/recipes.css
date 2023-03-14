@@ -1,17 +1,349 @@
 /*! CSS bare bones for recipes site */
 
  html {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ -ms-text-size-adjust: 100%;
+ -webkit-text-size-adjust: 100%;
 }
 
-*  {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
 }
 
 /* the rest is up to you */
+
+
+@font-face {
+    font-family: 'righteousregular';
+    src: url('righteous-regular-webfont.woff2') format('woff2'),
+         url('righteous-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'poppinsregular';
+    src: url('poppins-regular-webfont.woff2') format('woff2'),
+         url('poppins-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body {
+ background-color: bisque;
+ font-family: 'poppinsregular';
+ padding-top: 7em;
+ background-image:url(https://i.ibb.co/qD9v6q9/istockphoto-1313696101-612x612.jpg);
+ background-position: center;
+ background-repeat: repeat-x;
+ background-size: cover;
+ height: 100%;
+ }
+
+ol {
+ list-style-position: inside;
+ margin-left: 1em;
+ 
+}
+
+ol li {
+ font-size: 1em;
+ line-height: 1.8;
+ margin-left: 2em;
+ padding-right:60px;
+ padding-top: 10px;
+
+}
+
+h1,h2 {
+ color:rgb(238, 90, 5);
+ font-family: 'righteousregular';
+  text-align: center;
+ padding-bottom: 10px;
+ }
+
+.site-title {
+ color: rgb(255, 252, 200);
+ font-family: 'righteousregular';
+}
+ 
+ h2 {
+ margin: 1em 0 0 0;
+ color: rgb (255, 181, 10);
+ }
+ 
+ p {
+ margin-bottom: 1.5em;
+ line-height: 1.5;
+ padding-left: 10px;
+ padding-right: 10px;
+ }
+ 
+ header {
+ text-align: center;
+ background-color: red;
+ position:fixed;
+ top: 0;
+margin: auto;
+ width: 100%;
+ z-index: 1;
+ height:6rem;
+ font-family: 'righteousregular';
+ font-size: 25px;
+ 
+ }
+ 
+ header a h1 {
+ text-decoration: none;
+ color: rgb(255, 255, 255);
+ font-family: 'righteousregular', sans-serif; 
+ }
+
+a {
+    text-decoration: none;
+    color: rgb(255, 252, 200);
+    
+    }
+    
+ 
+
+nav ul {list-style-type: none}
+
+
+
+
+ header h1 {
+ margin: 12px auto;
+ }
+ 
+ img {
+ display: block;
+ width: 100%;
+ float: right;
+ padding: 20px;
+ }
+ 
+ 
+ nav a {
+ color:white;
+ text-decoration: none;
+ }
+ 
+ nav {
+    background-color: red; display: block;
+ /* border: 1px solid red; */
+ width: 15%;
+ padding: 24px;
+ margin: 0;
+ min-width: 120px;
+ position:fixed;
+ top:em;
+ left: 10px;
+ z-index: 12;
+ }
+ 
+ nav ul li {
+ font-size: .8rem;
+ }
+
+ .post-content img
+
+ {
+    
+    width: 70%;
+
+}
+ 
+ 
+
+
+
+ h2#ingredients {
+ color: orange;
+ }
+ 
+ /* making the first paragraph a little different. */
+ main p:first-child {
+ font-size: 1.2rem;
+ color:rgb(255, 0, 0);
+text-align: center;
+}
+ 
+ .recipehere {
+ color:white;
+ }
+ 
+ .home img
+ {
+max-width: 700px;
+ }
+
+
+	 
+ main {
+    width:95%;
+    max-width: 700px;
+    margin: auto;
+    background-color: white;
+    padding:12px;
+    margin-bottom: 100px;
+    animation: bounce 4s;
+    }
+
+
+button a {
+color: red; 
+font-size: 15px;
+font-family: 'righteousregular';
+}
+
+
+ 
+ main ul {
+ color: rgba(130, 50, 0, 0.914);
+ font-size: 1em;
+ line-height: 1.3;
+ margin-left: 4em;
+ padding-top: 10px;
+ }
+ 
+ main ul li {
+ margin-top: .3em;
+ }
+ 
+ footer {
+ display: block;
+ text-align: center;
+background-color: red;
+position: fixed;
+width: 100%;
+bottom: 0;
+margin-top: 100px;
+ }
+
+ .title
+ {
+font-size: 30px;
+
+ }
+
+
+ .list {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-around;
+ }
+
+ .recipe-teaser {
+ background-color: rgb(238, 177, 80);
+ flex-basis: 300px;
+ padding: 1em;
+ margin: .5em;
+ flex-grow: 1;
+ }
+
+ .recipe-teaser:hover {
+    background-color: rgb(165, 123, 54);
+    flex-basis: 300px;
+    padding: 1em;
+    margin: .5em;
+    flex-grow: 1;
+    }
+   
+    .recipe-teaser p::first-letter {
+        font-size: 30px;
+        }
+       
+
+
+       @-webkit-keyframes roll {
+            from { -webkit-transform: rotate(0deg) }
+            to   { -webkit-transform: rotate(360deg) }
+        }
+        
+        @-moz-keyframes roll {
+            from { -moz-transform: rotate(0deg) }
+            to   { -moz-transform: rotate(360deg) }
+        }
+        
+        @keyframes roll {
+            from { transform: rotate(0deg) }
+            to   { transform: rotate(360deg) }
+        }
+
+        body {
+            -moz-animation-name: roll;
+            -moz-animation-duration: 4s;
+            -moz-animation-iteration-count: 1;
+            -webkit-animation-name: roll;
+            -webkit-animation-duration: 4s;
+            -webkit-animation-iteration-count: 1;
+        }
+        
+
+
+
+
+ @media screen and (max-width: 700px) {
+ 
+
+ nav {
+ margin:0;
+ position: static;
+ width:100%;
+
+ }
+ 
+ nav ul {
+ font-size:1rem;
+ }
+ 
+ main {
+ width: 100%;
+ }
+ 
+ body {
+ background-color: white;
+ padding-top: 6em;
+ }
+ 
+ 
+ img {
+ float:none;
+ margin:0 auto;
+ width:100%;
+ }
+ }
+ 
+ @media screen and (max-width: 500px) {
+ 
+ 
+ nav {
+ position:relative;
+ top:0;
+ left:0;
+ width:100%;
+ text-align: center;
+ }
+ 
+ nav ul {
+ list-style: none;
+ }
+ 
+ html {
+ font-size: 80%;
+ }
+ 
+ header h1 {
+ font-size: 1.8em;
+ }
+ 
+ }
 
 
