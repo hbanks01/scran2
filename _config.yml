@@ -1,7 +1,7 @@
 
 # SITE CONFIGURATION
-url: "https://yoursite.netlify.app"   #change this to yours
-repository: yourusername/yourrepository
+url: "https://studentscran.netlify.app   #change this to yours
+repository: hbanks01/scran2
 title: Your recipe collection
 recipemenu: true # you can change to true and a menu of all recipes will appear
 editbutton: false # you can navigate to edit your site by going to https://yoursite.netlify.app/admin
